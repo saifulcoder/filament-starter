@@ -1,59 +1,226 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <img src="https://raw.githubusercontent.com/filamentphp/filament/3.x/art/logo.svg" alt="Filament Logo" width="400">
 </p>
 
-## About Laravel
+<p align="center">
+    <a href="https://filamentphp.com"><img src="https://img.shields.io/badge/Filament-v4.0-orange.svg" alt="Filament v4"></a>
+    <a href="https://laravel.com"><img src="https://img.shields.io/badge/Laravel-12.x-red.svg" alt="Laravel 12"></a>
+    <a href="https://php.net"><img src="https://img.shields.io/badge/PHP-8.2+-blue.svg" alt="PHP 8.2+"></a>
+    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Filament Starter Kit
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+A modern, production-ready starter kit built with **FilamentPHP v4**, **Laravel 12**, and essential packages for building robust admin panels. This starter comes pre-configured with role-based access control and dynamic menu management.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Features
 
-## Learning Laravel
+-   🎨 **FilamentPHP v4** - The latest version of the elegant admin panel framework
+-   🔐 **Filament Shield** - Complete role and permission management with auto-discovery
+-   📋 **Menu Management** - Dynamic navigation builder with role-based visibility
+-   🛡️ **Spatie Permission** - Robust role and permission handling
+-   ⚡ **Laravel 12** - Latest Laravel framework with modern PHP 8.2+ features
+-   🎯 **Production Ready** - Pre-configured and optimized for deployment
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 📦 Included Packages
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+| Package                                                                         | Version | Description                     |
+| ------------------------------------------------------------------------------- | ------- | ------------------------------- |
+| [filament/filament](https://filamentphp.com)                                    | ^4.0    | Admin panel framework           |
+| [bezhansalleh/filament-shield](https://github.com/bezhanSalleh/filament-shield) | ^4.0    | Role & permission management    |
+| [spatie/laravel-permission](https://github.com/spatie/laravel-permission)       | ^6.0    | Backend for roles & permissions |
 
-## Laravel Sponsors
+## 🚀 Installation
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Requirements
 
-### Premium Partners
+-   PHP >= 8.2
+-   Composer
+-   Node.js & NPM
+-   MySQL / PostgreSQL / SQLite
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Quick Start
 
-## Contributing
+1. **Clone the repository**
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+    ```bash
+    git clone https://github.com/your-username/filament-starter.git
+    cd filament-starter
+    ```
 
-## Code of Conduct
+2. **Run Setup Script**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+    ```bash
+    composer setup
+    ```
 
-## Security Vulnerabilities
+    This will:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    - Install Composer dependencies
+    - Copy `.env.example` to `.env`
+    - Generate application key
+    - Run database migrations
+    - Install NPM dependencies
+    - Build assets
 
-## License
+3. **Configure your database** in `.env`:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    ```env
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=filament_starter
+    DB_USERNAME=root
+    DB_PASSWORD=
+    ```
+
+4. **Setup Filament Shield** (Roles & Permissions):
+
+    ```bash
+    php artisan shield:setup
+    php artisan shield:generate --all
+    php artisan shield:super-admin
+    ```
+
+5. **Access the Admin Panel**
+
+    Visit: `http://your-domain/admin`
+
+## 🛠️ Development
+
+Start the development server with all essential services:
+
+```bash
+composer dev
+```
+
+This command runs concurrently:
+
+-   🌐 Laravel development server
+-   📬 Queue listener
+-   📝 Laravel Pail (log viewer)
+-   ⚡ Vite development server
+
+## 📚 Menu Management
+
+The starter includes a complete **Navigation Management** system that allows you to:
+
+-   ✅ Create multiple navigation menus
+-   ✅ Add menu items with labels and URLs
+-   ✅ Configure link targets (same tab / new tab)
+-   ✅ Set role-based visibility for each menu item
+-   ✅ Create nested sub-menus
+-   ✅ Reorder items with drag & drop
+
+### Usage Example
+
+```php
+use App\Models\Navigation;
+
+// Get navigation by handle
+$mainMenu = Navigation::where('handle', 'main-menu')->first();
+
+// Access menu items
+foreach ($mainMenu->items as $item) {
+    echo $item['label'];
+    echo $item['url'];
+}
+```
+
+## 🔐 Filament Shield
+
+Shield provides automatic permission discovery and generation for all Filament resources:
+
+### Generate Permissions
+
+```bash
+# Generate permissions for all resources
+php artisan shield:generate --all
+
+# Generate for specific resource
+php artisan shield:generate --resource=UserResource
+```
+
+### Create Super Admin
+
+```bash
+php artisan shield:super-admin
+```
+
+## 📁 Project Structure
+
+```
+├── app/
+│   ├── Filament/
+│   │   └── Resources/
+│   │       └── NavigationResource.php    # Menu management
+│   ├── Models/
+│   │   ├── Navigation.php                # Navigation model
+│   │   └── User.php                      # User with HasRoles trait
+│   ├── Policies/
+│   └── Providers/
+├── config/
+│   ├── filament.php                      # Filament configuration
+│   ├── filament-shield.php               # Shield configuration
+│   └── permission.php                    # Spatie Permission config
+├── database/
+│   └── migrations/
+│       ├── create_permission_tables.php  # Spatie permissions
+│       └── create_navigations_table.php  # Menu management
+└── resources/
+```
+
+## ⚙️ Configuration
+
+### Filament Shield
+
+Configure Shield settings in `config/filament-shield.php`:
+
+```php
+return [
+    'super_admin' => [
+        'enabled' => true,
+        'name' => 'super_admin',
+    ],
+    // ...
+];
+```
+
+### Adding New Resources
+
+When you create a new Filament resource, generate its permissions:
+
+```bash
+php artisan make:filament-resource Post
+php artisan shield:generate --resource=PostResource
+```
+
+## 🧪 Testing
+
+Run tests with:
+
+```bash
+composer test
+```
+
+## 📜 Available Scripts
+
+| Command          | Description               |
+| ---------------- | ------------------------- |
+| `composer setup` | Complete project setup    |
+| `composer dev`   | Start development servers |
+| `composer test`  | Run tests                 |
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+---
+
+<p align="center">
+    Made with ❤️ using <a href="https://filamentphp.com">FilamentPHP</a> and <a href="https://laravel.com">Laravel</a>
+</p>
