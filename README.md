@@ -219,6 +219,13 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
+## Contributing
+
+This project helps you and you want to help keep it going? Buy me a coffee:
+<br> <a href="https://www.buymeacoffee.com/saifulcoder" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 61px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a><br>
+or via <br>
+<a href="https://saweria.co/saifulcoder">https://saweria.co/saifulcoder</a>
+
 ---
 
 <p align="center">
