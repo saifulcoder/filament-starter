@@ -44,7 +44,7 @@ A modern, production-ready starter kit built with **FilamentPHP v4**, **Laravel 
 1. **Clone the repository**
 
     ```bash
-    git clone https://github.com/your-username/filament-starter.git
+    git clone https://github.com/saifulcoder/filament-starter.git
     cd filament-starter
     ```
 
